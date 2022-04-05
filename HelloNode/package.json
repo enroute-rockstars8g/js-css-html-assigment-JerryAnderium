@@ -1,13 +1,20 @@
 {
   "name": "hellonode",
   "version": "1.0.0",
-  "description": "Mi primer paquete de node.js",
-  "main": "index.js",
+  "description": "Mi primer node",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "script-muy-inecesario": "echo 'Si es muy inecesario'"
+    "build": "webpack --config config/webpack.config.js"
   },
   "author": "Gerardo Partida",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
