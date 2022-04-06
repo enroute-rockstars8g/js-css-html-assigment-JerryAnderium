@@ -11,19 +11,26 @@
     <style>
     </style>
     </head>
-    <body></body>
-    <script src="index.js"></script>
-        <div class="otherDiv">Este soy yo</div>
-        <div class="otherDiv">Gerardo Partida</div>
-        <div class="otherDiv">Descripcion</div>
-        <div class="otherDiv">Posición en la secuencia de fibonacci<br>
+    <body class="wrapper" style="background-color: #212227; color: whitesmoke; font-family: 'Helvetica';">
+        <div class="div1">Este soy yo<br>Gerardo Partida</div>
+        <div class="div2">Descripcion</div>
+        <div class="div3">Posición en la secuencia de fibonacci<br>
             <input type="text" id="inputFib"/>
-            <button onclick="fib()">Aceptar</button>
+            <button id="button1" onclick="fib(); this.disabled = true">Aceptar</button>
             <div id="fibContainer"></div>
         </div>
-        <div class="otherDiv">Factorial<br>
+            <div>
+            <canvas id="can1"></canvas>
+            </div>
+        </div>
+        <div class="div4">Factorial<br>
             <input type="text" id="inputFac"/>
-            <button onclick="fac()">Aceptar</button>
+            <button id="button2" onclick="fac(); this.disabled = true">Aceptar</button>
             <div id="facContainer"></div>
         </div>
+            <div>
+            <canvas id="can2"></canvas>
+            </div>
+        <script src="index.js"></script>
+    </body>
 </html>
