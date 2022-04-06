@@ -67,10 +67,11 @@ function fac() {
 
     const numberToShow = [];
 
-    if (facNum < 2) {
+    if (facNum < 0) {
         numberToShow.push("Error");
     }
-    else if (facNum === 0){
+
+    else if (facNum < 2) {
         numberToShow.push("1");
         
         function drawTower1(){
@@ -78,7 +79,7 @@ function fac() {
             Tower.strokeStyle = "white";
             Tower.lineWidth = 2,
             Tower.beginPath();
-            Tower.rect(20, 0, 50, 400);
+            Tower.rect(100, 100, 50, 400);
             Tower.stroke();
         }
 
@@ -89,7 +90,32 @@ function fac() {
             Tower.strokeStyle = "white";
             Tower.lineWidth = 2,
             Tower.beginPath();
-            Tower.rect(40, 0, 50, 400);
+            Tower.rect(500, 100, 50, 400);
+            Tower.stroke();
+        }
+
+        drawTower2();
+    }
+    else if (facNum === 0){
+        numberToShow.push("1");
+        
+        function drawTower1(){
+            Tower.fillStyle = "black";
+            Tower.strokeStyle = "white";
+            Tower.lineWidth = 2,
+            Tower.beginPath();
+            Tower.rect(100, 100, 50, 400);
+            Tower.stroke();
+        }
+
+        drawTower1();
+    
+        function drawTower2(){
+            Tower.fillStyle = "black";
+            Tower.strokeStyle = "white";
+            Tower.lineWidth = 2,
+            Tower.beginPath();
+            Tower.rect(100, 500, 50, 400);
             Tower.stroke();
         }
 
