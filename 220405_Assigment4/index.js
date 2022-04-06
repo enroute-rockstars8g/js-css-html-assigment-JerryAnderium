@@ -150,7 +150,6 @@ function fac() {
 
             drawTower2();
         }
-        numberToShow.push(prevfact)
         numberToShow.push(factorial)
     }
 
