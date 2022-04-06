@@ -11,26 +11,55 @@
     <style>
     </style>
     </head>
-    <body class="wrapper" style="background-color: #212227; color: whitesmoke; font-family: 'Helvetica';">
-        <div class="div1">Este soy yo<br>Gerardo Partida</div>
-        <div class="div2">Descripcion</div>
-        <div class="div3">Posición en la secuencia de fibonacci<br>
+    <body class="container">
+        <div class="div1">
+            <h1>Este soy yo: <br>
+            Gerardo Partida<br></h1>
+            <div>
+                <img id="foto" src="photo.jpg" alt="Mi foto"/>
+            </div>
+
+        </div>
+        <div class="div2">Soy Gerardo Partida, licenciado en Nanotecnología e 
+            ingeniería molecular; egresado de la Universidad de las Americas Puebla (UDLAP).<br>
+            ¿Porque decidí entrar a trabajar como programador? 
+            Desde siempre me he interesado por la tecnología y las computadoras, 
+            desde la secundaria  yo ya estaba escribiendo codigo para proyectos 
+            personales, saliendo de la universidad emprendí con unos colegas una 
+            empresa de desarrollo y producción de nanomateriales, yo me coloqué 
+            en el area operativa, y como somos pocos en la empresa, yo debí 
+            implementar toda la infraestructura tanto física como informática, 
+            esto incluyendo, setup de servidores, programación de equpos para 
+            automatización el desarrollo de la página web, etc.
+            <br>Desafortunadamente el empredurismo es dificil, tardado, al 
+            principio no remunera, y como ya estoy empezandoa formar mi familia
+             (tengo dos años casado), me he tenido que forzar a dejar un poco al 
+             lado mi empresa (sin abandonarla completamente), y probar mi suerte 
+             en el mundo de la programación, pues es un area que me gusta mucho y 
+             en la que creo firmemente que  puedo desarrollarme satisfactoriamente.
+        </div>
+        <div class="div3">
+            Posición en la secuencia de fibonacci<br>
+            Dependiendo el numero se define el espacio entre nodos en la siguiente animación de la flor de Fibonacci:<br>
             <input type="text" id="inputFib"/>
             <button id="button1" onclick="fib(); this.disabled = true">Aceptar</button>
             <div id="fibContainer"></div>
-        </div>
             <div>
-            <canvas id="can1"></canvas>
+                <canvas id="can1"></canvas>
             </div>
         </div>
-        <div class="div4">Factorial<br>
+            
+        </div>
+        <div class="div4">
+            Factorial! de un numero<br>
+            En el sigueinte gráfico se observa la proporción entre el factorial del numero ingresado (izquierda) y del numero anterior a este (derecha):<br>
             <input type="text" id="inputFac"/>
             <button id="button2" onclick="fac(); this.disabled = true">Aceptar</button>
             <div id="facContainer"></div>
-        </div>
             <div>
-            <canvas id="can2"></canvas>
+                <canvas id="can2"></canvas>
             </div>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
